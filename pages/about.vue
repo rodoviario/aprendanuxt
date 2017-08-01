@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <p>Hello {{ name }}!</p>
-    <nuxt-link to="/about">Go to /about</nuxt-link>
+    <p>About Page</p>
+    <nuxt-link to="/">Go to /</nuxt-link>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   asyncData () {
     return new Promise((resolve) => {
       setTimeout(function () {
-        resolve({ name: 'world' })
+        resolve({})
       }, 1000)
     })
   }
